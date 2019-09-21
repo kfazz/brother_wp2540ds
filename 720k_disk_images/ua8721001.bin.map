@@ -1,0 +1,9 @@
+# Mapfile. Created by GNU ddrescue version 1.23
+# Command line: ddrescue /dev/sdb ../ua8721001.bin ../ua8721001.bin.map
+# Start time:   2019-09-06 15:48:48
+# Current time: 2019-09-06 15:49:15
+# Finished
+# current_pos  current_status  current_pass
+0x000B0000     +               1
+#      pos        size  status
+0x00000000  0x000B4000  +
