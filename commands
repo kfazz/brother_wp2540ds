@@ -1,0 +1,45 @@
+RST6 A2 B9
+RST6 A5 B4 -> HL=0x1234
+RST6 A4 B3
+
+
+RST1: Input related syscalls
+valid subcommands:
+A0-1, A4-10, A12-14
+
+
+RST1 A4
+RST1 A5 getChar
+RST1 A6
+RST1 A7
+RST1 A8 waitKey?
+RST1 A9
+RST1 A10
+
+RST2: Screen related syscalls
+Valid subcommands:
+A0-A10, A16-A25,A32,33,35,37-41, 48-50
+
+RST2 A0 display on/off (B==0 for off, B!=0 for on)
+RST2 A1 set cursor addr
+RST2 A2 cursor on/off (B==0 for off, B!=0 for on)
+RST2 A3 set cursor size (B=2 ,B=3,or B=0 (default?) )
+
+RST2 A7 blit? erase?		ex: B128 DE:0033 
+RST2 A8 rom string call?
+
+
+RST2 A16 CLEAR SCREEN
+RST2 A17 PUTCHAR(XY) B=Char D=Y E=X
+
+RST2 A19 either clear line or copy line HL=LINE ex: 0x2195 clears first line
+
+RST3 seems to be memory copy / dma related
+
+RST3 A6	MEM to MEM, descending		BC=count
+RST3 A7 MEM to MEM, ascending		BC=count
+
+RST4 A3 B242   ab = 0x3f2 related to 0x23f2??
+
+
+
