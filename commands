@@ -67,3 +67,9 @@ RST6 A4 B3
 RST6 A5 B4 -> HL=0x1234
 
 
+WP75:
+80BB ramtest done
+80C6
+814f ramclear (used to clear high ram in 6x000 area)
+
+
