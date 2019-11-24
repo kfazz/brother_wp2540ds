@@ -1,0 +1,28 @@
+P1: 44 pin expansion connector for dictionary rom
+
+P2: unpopulated serial port
+1 \__	GND? 
+2 /	
+3	goes to RA11 near #C4.  RESET??
+4	RTS0
+5	CTS0
+6	DCD0
+7	TXA0
+8	RXA0
+9 \__ 5V?
+10/
+
+P3: CRT connector
+P4: printer
+P5: daisywheel
+P6: Power connector
+P7: floppy drive
+P8: floppy drive
+P9:
+P10: Cover switch
+P11: Keyboard connector
+
+IC #F5 DIP40 MOERO / M0ER0 FDC
+floppy drive connects via P7 and P8
+
+
